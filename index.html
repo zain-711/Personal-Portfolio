@@ -20,10 +20,12 @@
       </div>
       <div id="menu">
         <ul id="nav-links" class="">
-          <li class="link"><a href="#top" class="link">About Me</a></li>
-          <li class="link"><a href="" class="link">Projects</a></li>
-          <li class="link"><a href="" class="link">Skills</a></li>
-          <li class="link"><a href="" class="link">Contact</a></li>
+          <li class="list-link"><a href="#top" class="link">About Me</a></li>
+          <li class="list-link">
+            <a href="#projects" class="link">Projects</a>
+          </li>
+          <li class="list-link"><a href="" class="link">Skills</a></li>
+          <li class="list-link"><a href="" class="link">Contact</a></li>
         </ul>
         <div id="container" onclick="menuNav(this); toggleList()">
           <div class="bar1"></div>
@@ -33,43 +35,64 @@
       </div>
     </nav>
     <main>
-      <section class="sec-1">
-        <div class="about-me">
-          <h2>About Me</h2>
-          <p>
-            I am a passionate programmer with seven years of coding practice,
-            beginning at the age of 14. Currently, I am seeking an entry-level
-            software development position to leverage my skills and enthusiasm
-            for technology.
-          </p>
-          <p>
-            I have hands-on experience as an IT Technician, where I: support
-            directors and the main office; troubleshoot issues; and manage
-            network infrastructures. I excel in both hardware and software
-            support, ensuring efficient and secure operations.
-          </p>
-          <p>
-            One of my key achievements is creating a network infrastructure and
-            secure hardware, which improved time management, efficiency, and
-            security. My commitment to professionalism and data security has
-            resulted in zero data breaches since implementing the new system.
-          </p>
-          <p>
-            My education includes an AS Level in Further Maths, A Levels in
-            Computer Science, Maths, and Physics, DiDA I-media (Distinction),
-            and a Front-End Coding Bootcamp certification.
-          </p>
-          <p>
-            In my spare time, I enjoy building computer hardware and coding
-            various programs for example, a car rental system created with
-            python and SQL database. I am excited to bring my skills and passion
-            to a dynamic team. You can view my projects on my
-            <a class="github" href="https://github.com/zain-711"
-              >GitHub profile.</a
-            >
-          </p>
-        </div>
-        <img />
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate programmer with seven years of coding practice,
+          beginning at the age of 14. Currently, I am seeking an entry-level
+          software development position to leverage my skills and enthusiasm for
+          technology.
+        </p>
+        <p>
+          I have hands-on experience as an IT Technician, where I: support
+          directors and the main office; troubleshoot issues; and manage network
+          infrastructures. I excel in both hardware and software support,
+          ensuring efficient and secure operations.
+        </p>
+        <p>
+          One of my key achievements is creating a network infrastructure and
+          secure hardware, which improved time management, efficiency, and
+          security. My commitment to professionalism and data security has
+          resulted in zero data breaches since implementing the new system.
+        </p>
+        <p>
+          My education includes an AS Level in Further Maths, A Levels in
+          Computer Science, Maths, and Physics, DiDA I-media (Distinction), and
+          a Front-End Coding Bootcamp certification.
+        </p>
+        <p>
+          In my spare time, I enjoy building computer hardware and coding
+          various programs for example, a car rental system created with python
+          and SQL database. I am excited to bring my skills and passion to a
+          dynamic team. You can view my projects on my
+          <a class="github" href="https://github.com/zain-711"
+            >GitHub profile.</a
+          >
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li class="project-item">
+            <figure>
+              <figcaption onclick="toggleProject()" class="caption">
+                Car Rental Program &#8592 (Click to see below!)
+              </figcaption>
+              <br />
+              <img
+                id="IMG"
+                class=""
+                src="rental-program.png"
+                alt="rentalProgram"
+              />
+            </figure>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
     </main>
   </body>

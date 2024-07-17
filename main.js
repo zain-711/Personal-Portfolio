@@ -8,4 +8,7 @@ function toggleList() {
   list.classList.toggle("show");
 }
 
-// const list = document.querySelector("#nav-links");
+function toggleProject() {
+  let project = document.getElementById("IMG");
+  project.classList.toggle("show");
+}
