@@ -10,7 +10,7 @@ body {
   font-family: "Roboto Condensed";
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 var(--spacing-3);
 }
@@ -27,7 +27,7 @@ nav {
   font-size: 2.1rem;
   margin-left: 100px;
   margin: 0;
-  color: rgb(202, 73, 140);
+  color: rgb(99, 120, 220);
 }
 
 #menu {
@@ -47,23 +47,29 @@ nav {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: rgb(202, 73, 140);
+  background-color: rgb(99, 120, 220);
   margin: 6px 0;
   transition: 0.4s;
-  border: 3px rgb(202, 73, 140);
+  border: 3px rgb(99, 120, 220);
   border-radius: 20%;
 }
 
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
+  border: 3px rgb(202, 73, 140);
+  background-color: rgb(202, 73, 140);
 }
 
 .change .bar2 {
   opacity: 0;
+  border: 3px rgb(202, 73, 140);
+  background-color: rgb(202, 73, 140);
 }
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
+  border: 3px rgb(202, 73, 140);
+  background-color: rgb(202, 73, 140);
 }
 
 #nav-links {
@@ -76,7 +82,7 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 li {
@@ -105,9 +111,29 @@ main {
   justify-content: flex-start;
 }
 
+.sec-1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 50%;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 2%;
+  background-color: white;
+  box-shadow: 2px 3px 5px 2px rgba(99, 120, 220, 0.4);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1em;
+}
+.github {
+  color: rgb(99, 120, 220);
 }
