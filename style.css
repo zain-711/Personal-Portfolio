@@ -144,15 +144,26 @@ p {
   text-decoration: solid;
 }
 
+#middle {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+}
+
+#middle.wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #projects {
   background-color: white;
   padding: 5px;
   border: 1px solid white;
   border-radius: 2%;
-  width: 100%;
   min-height: 400px;
   box-shadow: 1px 3px 5px 3px rgba(99, 120, 220, 0.4);
   margin-bottom: 90px;
+  max-width: 1000px;
 }
 
 .caption {
@@ -165,10 +176,24 @@ p {
   cursor: pointer;
 }
 
-#IMG {
+#IMG1,
+#IMG2 {
   display: none;
 }
 
-#IMG.show {
+#IMG1.show,
+#IMG2.show {
   display: block;
+  max-width: 800px;
+}
+
+#skills {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 2%;
+  min-height: 400px;
+  margin-bottom: 90px;
+  box-shadow: 1px 3px 5px 3px rgba(99, 120, 220, 0.4);
+  min-width: 25%;
 }

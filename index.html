@@ -24,7 +24,7 @@
           <li class="list-link">
             <a href="#projects" class="link">Projects</a>
           </li>
-          <li class="list-link"><a href="" class="link">Skills</a></li>
+          <li class="list-link"><a href="#skills" class="link">Skills</a></li>
           <li class="list-link"><a href="" class="link">Contact</a></li>
         </ul>
         <div id="container" onclick="menuNav(this); toggleList()">
@@ -70,30 +70,52 @@
           >
         </p>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li class="project-item">
-            <figure>
-              <figcaption onclick="toggleProject()" class="caption">
-                Car Rental Program &#8592 (Click to see below!)
-              </figcaption>
-              <br />
-              <img
-                id="IMG"
-                class=""
-                src="rental-program.png"
-                alt="rentalProgram"
-              />
-            </figure>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+      <div id="middle" class="">
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li value="1" id="project-item" onclick="toggleProject(this)">
+              <figure>
+                <figcaption class="caption" >
+                  Car Rental Program &#8592 (Click to see below!)
+                </figcaption>
+                <br />
+                <img
+                  id="IMG1"
+                  class=""
+                  src="rental-program.png"
+                  alt="rentalProgram"
+                />
+              </figure>
+            </li>
+            <li value="2" id="project-item" onclick="toggleProject(this)">
+              <figure>
+                <figcaption class="caption" >
+                  Reciept-List React Webiste
+                </figcaption>
+                <br />
+                <img
+                  id="IMG2"
+                  class=""
+                  src="reciept-list-project.PNG"
+                  alt="recieptList"
+                  
+                />
+              </figure>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section id="skills">
+          <h2>
+            Skills
+          </h2>
+        </section>        
+      </div>
+
     </main>
   </body>
 </html>

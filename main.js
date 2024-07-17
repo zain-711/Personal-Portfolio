@@ -8,7 +8,18 @@ function toggleList() {
   list.classList.toggle("show");
 }
 
-function toggleProject() {
-  let project = document.getElementById("IMG");
+function togglewrap() {
+  let middle = document.querySelector("#middle");
+  console.log(middle);
+  middle.classList.toggle("wrap");
+}
+
+function toggleProject(x) {
+  // console.log(x);
+  let imgNumber = x.value;
+  // console.log(imgNumber);
+  let project = document.querySelector(`#IMG${imgNumber}`);
+  // console.log(project);
   project.classList.toggle("show");
+  togglewrap();
 }
