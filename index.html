@@ -38,14 +38,14 @@
       <section class="about-me">
         <h2>About Me</h2>
         <p>
-          I am a passionate programmer with seven years of coding practice,
-          beginning at the age of 14. Currently, I am seeking an entry-level
+          I am a passionate programmer with 5 years of coding practice,
+          beginning with basic python. Currently, I am seeking an entry-level
           software development position to leverage my skills and enthusiasm for
           technology.
         </p>
         <p>
           I have hands-on experience as an IT Technician, where I: support
-          directors and the main office; troubleshoot issues; and manage network
+          directors and the main office; troubleshoot issues and manage network
           infrastructures. I excel in both hardware and software support,
           ensuring efficient and secure operations.
         </p>
@@ -70,15 +70,15 @@
           >
         </p>
       </section>
-      <div id="middle" class="">
-        <section id="projects">
+      <section id="middle" class="">
+        <section id="projects" class="" onclick="projects(this)">
           <h2>Projects</h2>
-          <ul>
-            <li value="1" id="project-item" onclick="toggleProject(this)">
-              <figure>
-                <figcaption class="caption" >
-                  Car Rental Program &#8592 (Click to see below!)
-                </figcaption>
+          <ul id="projectList" class="">
+            <li value="1" id="project-item" class="" onclick="toggleProjectItem(this)">
+              <div>
+                <p class="caption" >
+                  Car Rental Program  &#8592 <sub class="subscript">(Click here!)</sub>
+                </p>
                 <br />
                 <img
                   id="IMG1"
@@ -86,13 +86,13 @@
                   src="rental-program.png"
                   alt="rentalProgram"
                 />
-              </figure>
+              </div>
             </li>
-            <li value="2" id="project-item" onclick="toggleProject(this)">
-              <figure>
-                <figcaption class="caption" >
+            <li value="2" id="project-item" class="" onclick="toggleProjectItem(this)">
+              <div>
+                <p class="caption" >
                   Reciept-List React Webiste
-                </figcaption>
+                </p>
                 <br />
                 <img
                   id="IMG2"
@@ -101,21 +101,35 @@
                   alt="recieptList"
                   
                 />
-              </figure>
+              </div>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
           </ul>
         </section>
-        <section id="skills">
+        <section id="skills" class="" onclick="skills(this)">
           <h2>
             Skills
           </h2>
+          <table class="" id="skillsTable">
+            <tbody>
+              <tr>
+                <td><img id="tableIMG" src="js-logo.png" alt="JS-logo"></td>
+                <td><img src=""></td>
+                <td><img src=""></td>
+              </tr>
+              <tr>
+                <td><img src=""></td>
+                <td><img src=""></td>
+                <td><img src=""></td>
+              </tr>
+              <tr>
+                <td><img src=""></td>
+                <td><img src=""></td>
+                <td><img src=""></td>
+              </tr>
+            </tbody>
+          </table>
         </section>        
-      </div>
-
+      </section>
     </main>
   </body>
 </html>

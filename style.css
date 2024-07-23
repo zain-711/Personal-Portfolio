@@ -6,7 +6,12 @@
 }
 
 body {
-  background-color: rgb(240, 240, 240);
+  background-image: linear-gradient(
+    43deg,
+    #000000 0%,
+    #2e2e37 46%,
+    #ffffff 100%
+  );
   font-family: "Roboto Condensed";
   display: flex;
   flex-direction: column;
@@ -19,9 +24,8 @@ nav {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
-  border-bottom: 3px solid rgba(99, 120, 220, 0.4);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-radius: 2%;
-  background-color: rgba(240, 240, 240, 0.8);
   height: 147px;
   top: 0;
   padding-left: 8px;
@@ -33,7 +37,7 @@ nav {
   font-size: 2.1rem;
   margin-left: 100px;
   margin: 0;
-  color: rgb(99, 120, 220);
+  color: rgb(247, 186, 123);
 }
 
 #menu {
@@ -57,7 +61,7 @@ nav {
   margin: 6px 0;
   transition: 0.4s;
   border: 3px rgb(99, 120, 220);
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 .change .bar1 {
@@ -104,10 +108,6 @@ nav {
   color: rgb(99, 120, 220);
 }
 
-a:link {
-  color: rgb(99, 120, 220);
-}
-
 a:hover {
   color: rgb(202, 73, 140);
   font-weight: bold;
@@ -124,11 +124,22 @@ main {
   flex-direction: column;
   width: 75%;
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2%;
-  background-color: white;
-  box-shadow: 1px 3px 5px 3px rgba(99, 120, 220, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px 1px rgb(0, 0, 0);
   margin-bottom: 90px;
+  color: rgb(255, 204, 112);
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 h2 {
@@ -140,34 +151,78 @@ p {
   font-size: 1.1em;
 }
 .github {
-  color: rgb(99, 120, 220);
+  color: rgb(233, 154, 144);
   text-decoration: solid;
+  text-decoration: underline;
 }
 
 #middle {
   display: flex;
   width: 1000px;
-  justify-content: space-between;
 }
 
 #middle.wrap {
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 #projects {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 0px;
   border-radius: 2%;
   min-height: 400px;
-  box-shadow: 1px 3px 5px 3px rgba(99, 120, 220, 0.4);
   margin-bottom: 90px;
   max-width: 1000px;
+  width: 90%;
+  color: white;
+}
+
+.close-project {
+  animation-name: close;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes close {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 10%;
+  }
+}
+
+.open-project {
+  animation-name: open;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+#projectList.hide {
+  visibility: hidden;
 }
 
 .caption {
   font-size: 1.1em;
+  display: flex;
+  align-items: baseline;
+}
+.subscript {
+  margin-left: 6px;
 }
 
 .caption:hover {
@@ -188,12 +243,71 @@ p {
 }
 
 #skills {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 0px;
   border-radius: 2%;
   min-height: 400px;
   margin-bottom: 90px;
-  box-shadow: 1px 3px 5px 3px rgba(99, 120, 220, 0.4);
-  min-width: 25%;
+  color: white;
+}
+
+.open-skills {
+  animation-name: open;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+.close-skills {
+  animation-name: close;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes close {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 10%;
+  }
+}
+
+#skillsTable {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+#skillsTable.show {
+  display: block;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+td {
+  width: 33%;
+  height: 33%;
+}
+#tableIMG {
+  width: 33%;
+  height: 33%;
 }
