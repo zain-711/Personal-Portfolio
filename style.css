@@ -12,6 +12,7 @@ body {
     #2e2e37 50%,
     #c1c1c1 100%
   );
+  background-repeat: no-repeat;
   font-family: "Roboto Condensed";
   display: flex;
   flex-direction: column;
@@ -260,6 +261,7 @@ p {
 #IMG2.show {
   display: block;
   max-width: 700px;
+  width: 90%;
 }
 
 #skills {
@@ -350,4 +352,11 @@ td {
 }
 .nextJs {
   filter: invert(1);
+}
+
+h3 {
+  margin-top: 60px;
+  color: rgb(255, 204, 112);
+  font-weight: bold;
+  text-align: center;
 }
