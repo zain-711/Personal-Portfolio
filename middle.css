@@ -2,6 +2,7 @@
   display: flex;
   width: 95%;
   max-width: 1000px;
+  max-height: 1000px;
 }
 
 #middle.wrap {
@@ -165,18 +166,16 @@
 #skillsTable {
   display: none;
   width: 90%;
-  height: 80%;
 }
 
 #skillsTable.show {
-  display: block;
+  display: flex;
 }
 
 table {
   text-align: center;
 }
 
-table,
 th,
 td {
   border: 1px solid rgba(0, 0, 0, 0.4);
