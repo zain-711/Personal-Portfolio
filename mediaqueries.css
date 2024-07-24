@@ -1,0 +1,36 @@
+@media screen and (max-width: 968px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  #menu {
+    flex-wrap: wrap-reverse;
+  }
+
+  #nav-links {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  #skillsTable {
+    height: 50%;
+  }
+}
