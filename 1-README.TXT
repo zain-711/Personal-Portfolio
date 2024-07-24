@@ -1,0 +1,1 @@
+This is my portfolio. It contains all my projects and skills on an interactive website. Run index.html in any browser on mobile, tablet, laptop or desktop.
