@@ -7,10 +7,10 @@
 
 body {
   background-image: linear-gradient(
-    43deg,
+    45deg,
     #000000 0%,
-    #2e2e37 46%,
-    #ffffff 100%
+    #2e2e37 50%,
+    #c1c1c1 100%
   );
   font-family: "Roboto Condensed";
   display: flex;
@@ -24,7 +24,7 @@ nav {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
   border-radius: 2%;
   height: 147px;
   top: 0;
@@ -37,7 +37,7 @@ nav {
   font-size: 2.1rem;
   margin-left: 100px;
   margin: 0;
-  color: rgb(247, 186, 123);
+  color: rgb(232, 167, 54);
 }
 
 #menu {
@@ -57,29 +57,29 @@ nav {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: rgb(99, 120, 220);
+  background-color: rgb(230, 161, 42);
   margin: 6px 0;
   transition: 0.4s;
-  border: 3px rgb(99, 120, 220);
+  border: 3px rgb(230, 161, 42);
   border-radius: 10%;
 }
 
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
-  border: 3px rgb(202, 73, 140);
-  background-color: rgb(202, 73, 140);
+  border: 3px rgb(214, 25, 25);
+  background-color: rgb(214, 25, 25);
 }
 
 .change .bar2 {
   opacity: 0;
-  border: 3px rgb(202, 73, 140);
-  background-color: rgb(202, 73, 140);
+  border: 3px rgb(214, 25, 25);
+  background-color: rgb(214, 25, 25);
 }
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
-  border: 3px rgb(202, 73, 140);
-  background-color: rgb(202, 73, 140);
+  border: 3px rgb(214, 25, 25);
+  background-color: rgb(214, 25, 25);
 }
 
 #nav-links {
@@ -96,21 +96,24 @@ nav {
 }
 
 .list-link {
-  border: 2px solid rgba(99, 120, 220, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 4%;
   margin: 8px;
+  padding: 6px;
 }
 
 .link {
   margin: 8px;
   font-size: 1.4rem;
-  text-decoration: solid;
-  color: rgb(99, 120, 220);
+  text-decoration: underline;
+  color: rgb(30, 175, 233);
 }
 
 a:hover {
-  color: rgb(202, 73, 140);
+  color: rgba(56, 54, 192, 0.863);
   font-weight: bold;
+  text-decoration: solid;
 }
 
 main {
@@ -145,13 +148,15 @@ main {
 h2 {
   font-size: 1.6rem;
   text-align: center;
+  color: rgb(232, 167, 54);
 }
 
 p {
   font-size: 1.1em;
 }
 .github {
-  color: rgb(233, 154, 144);
+  /* color: rgb(233, 154, 144); */
+  color: rgb(30, 175, 233);
   text-decoration: solid;
   text-decoration: underline;
 }
@@ -166,21 +171,35 @@ p {
 }
 
 #projects {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: 0px;
+  border-right: 3px solid rgba(0, 0, 0, 0.6);
   border-radius: 2%;
   min-height: 400px;
   margin-bottom: 90px;
-  max-width: 1000px;
-  width: 90%;
-  color: white;
+  max-width: 80%;
+  width: 80%;
+  color: rgb(255, 204, 112);
+}
+
+#rightArrowIMG {
+  display: none;
+  max-width: 100%;
+  height: 80%;
+  align-self: flex-end;
+}
+
+#rightArrowIMG.show {
+  display: block;
 }
 
 .close-project {
   animation-name: close;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -188,16 +207,16 @@ p {
 
 @keyframes close {
   from {
-    width: 90%;
+    width: 80%;
   }
   to {
-    width: 10%;
+    width: 20%;
   }
 }
 
 .open-project {
   animation-name: open;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -205,15 +224,15 @@ p {
 
 @keyframes open {
   from {
-    width: 10%;
+    width: 20%;
   }
   to {
-    width: 90%;
+    width: 80%;
   }
 }
 
 #projectList.hide {
-  visibility: hidden;
+  display: none;
 }
 
 .caption {
@@ -221,6 +240,7 @@ p {
   display: flex;
   align-items: baseline;
 }
+
 .subscript {
   margin-left: 6px;
 }
@@ -239,23 +259,35 @@ p {
 #IMG1.show,
 #IMG2.show {
   display: block;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 #skills {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: 0px;
+  border-left: 3px solid rgba(0, 0, 0, 0.6);
+  border-right: 0px solid;
   border-radius: 2%;
   min-height: 400px;
   margin-bottom: 90px;
   color: white;
+  width: 20%;
+}
+
+#leftArrowIMG {
+  max-width: 100%;
+  height: 80%;
+  transform: scaleX(-1);
+}
+
+#leftArrowIMG.hide {
+  display: none;
 }
 
 .open-skills {
   animation-name: open;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -263,16 +295,16 @@ p {
 
 @keyframes open {
   from {
-    width: 10%;
+    width: 20%;
   }
   to {
-    width: 90%;
+    width: 80%;
   }
 }
 
 .close-skills {
   animation-name: close;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -280,10 +312,10 @@ p {
 
 @keyframes close {
   from {
-    width: 90%;
+    width: 80%;
   }
   to {
-    width: 10%;
+    width: 20%;
   }
 }
 
@@ -297,10 +329,14 @@ p {
   display: block;
 }
 
+table {
+  text-align: center;
+}
+
 table,
 th,
 td {
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 td {
@@ -308,6 +344,10 @@ td {
   height: 33%;
 }
 #tableIMG {
-  width: 33%;
-  height: 33%;
+  width: 50%;
+  height: 50%;
+  margin: 2px;
+}
+.nextJs {
+  filter: invert(1);
 }

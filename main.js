@@ -1,4 +1,5 @@
 function menuNav(x) {
+  // "x" = element interacted with
   x.classList.toggle("change"); //animation for menu
 }
 
@@ -13,7 +14,7 @@ function togglewrap() {
   // console.log(middle);
   if (middle.classList[0] !== "wrap") {
     middle.classList.toggle("wrap");
-  } //wraps skills if image is too large
+  } //wraps skills
 }
 
 function toggleProjectItem(x) {
@@ -30,11 +31,14 @@ function closeProject() {
   //animation for closing projects and hiding content
   let proj = document.querySelector("#projects");
   let projectList = document.querySelector("#projectList");
+  let rightArrowImg = document.querySelector("#rightArrowIMG");
   if (proj.classList[0] === "open-project") {
+    rightArrowImg.classList.add("show");
     proj.classList.remove("open-project");
     proj.classList.add("close-project");
     projectList.classList.add("hide");
   } else {
+    rightArrowImg.classList.add("show");
     proj.classList.add("close-project");
     projectList.classList.add("hide");
   }
@@ -43,18 +47,21 @@ function closeProject() {
 function openSkills(x) {
   // animation for opening skills and showing content
   let skillsTable = document.querySelector("#skillsTable");
+  let leftArrowImg = document.querySelector("#leftArrowIMG");
   if (x.classList[0] === "close-skills") {
     x.classList.remove("close-skills");
     x.classList.add("open-skills");
     skillsTable.classList.add("show");
+    leftArrowImg.classList.add("hide");
   } else {
     x.classList.add("open-skills");
     skillsTable.classList.add("show");
+    leftArrowImg.classList.add("hide");
   }
 }
 
 function skills(x) {
-  // calls two functions above
+  // calls two functions above in one function for html side.
   closeProject();
   openSkills(x);
 }
@@ -73,10 +80,14 @@ function closeSkills() {
 function openProject(x) {
   // Resets projects to full position and content back to visible.
   let projectList = document.querySelector("#projectList");
+  let leftArrowImg = document.querySelector("#leftArrowIMG");
+  let rightArrowImg = document.querySelector("#rightArrowIMG");
   if (x.classList[0] === "close-project") {
     x.classList.remove("close-project"); // Removing animation for closing project
     projectList.classList.remove("hide");
     x.classList.add("open-project");
+    leftArrowImg.classList.remove("hide");
+    rightArrowImg.classList.remove("show");
   }
 }
 
