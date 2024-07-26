@@ -107,12 +107,74 @@ nav {
 .link {
   margin: 8px;
   font-size: 1.4rem;
-  text-decoration: underline;
+  text-decoration: solid;
   color: rgb(30, 175, 233);
 }
 
-/* a:hover {
-  color: rgba(56, 54, 192, 0.863);
-  font-weight: bold;
-  text-decoration: solid;
-} */
+@media screen and (max-width: 968px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .list-link {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .link {
+    color: rgb(169, 226, 248);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  a:hover {
+    color: rgba(56, 54, 192, 0.863);
+    font-weight: bold;
+    text-decoration: solid;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu {
+    margin: 0;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+  }
+
+  #nav-links {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+  #nav-links.show {
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}

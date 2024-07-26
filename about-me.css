@@ -40,6 +40,5 @@ p {
 .github {
   /* color: rgb(233, 154, 144); */
   color: rgb(30, 175, 233);
-  text-decoration: solid;
   text-decoration: underline;
 }

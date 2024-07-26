@@ -17,12 +17,15 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: 0px;
   border-right: 3px solid rgba(0, 0, 0, 0.6);
+  border-top: 3px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
   border-radius: 2%;
   min-height: 400px;
   margin-bottom: 90px;
   max-width: 80%;
   width: 80%;
   color: rgb(255, 204, 112);
+  overflow: hidden;
 }
 
 #rightArrowIMG {
@@ -85,8 +88,6 @@
 }
 
 .caption:hover {
-  font-size: 1.3em;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -99,7 +100,7 @@
 #IMG2.show {
   display: block;
   max-width: 700px;
-  width: 90%;
+  width: 500px;
 }
 
 #skills {
@@ -110,12 +111,15 @@
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: 3px solid rgba(0, 0, 0, 0.6);
+  border-top: 3px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
   border-right: 0px solid;
   border-radius: 2%;
   min-height: 400px;
   margin-bottom: 90px;
   color: white;
   width: 20%;
+  overflow: hidden;
 }
 
 #leftArrowIMG {
@@ -165,7 +169,6 @@
 
 #skillsTable {
   display: none;
-  width: 90%;
 }
 
 #skillsTable.show {
@@ -199,4 +202,51 @@ h3 {
   color: rgb(255, 204, 112);
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .caption:hover {
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 446px) {
+  #skillsTable {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .link {
+    font-size: 1rem;
+  }
+  #IMG1.show,
+  #IMG2.show {
+    max-width: 700px;
+    width: 90%;
+  }
+  #skillsTable {
+    width: 90%;
+    height: 100px;
+  }
+}
+
+@media screen and(max-width:600px) {
+  #skillsTable {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #skillsTable {
+    width: 90%;
+    max-height: 100px;
+    height: 50px;
+  }
+  #tableIMG {
+    margin: 0;
+  }
 }
