@@ -5,8 +5,30 @@
   font-style: normal;
 }
 html {
+  margin: 0px;
   height: 100%;
+  width: 100%;
 }
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    45deg,
+    #000000 0%,
+    #2e2e37 50%,
+    #c1c1c1 100%
+  );
+  background-repeat: no-repeat;
+  font-family: "Roboto Condensed";
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-3);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -50,4 +72,15 @@ h2 {
 
 p {
   font-size: 1.1em;
+}
+
+footer {
+  align-self: center;
+}
+
+h3 {
+  margin-top: 60px;
+  color: rgba(255, 204, 112, 0.6);
+  font-weight: bold;
+  text-align: center;
 }

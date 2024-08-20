@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about-me.css" />
     <link rel="stylesheet" href="middle.css" />
+    <link rel="stylesheet" href="media-queries.css" />
     <script src="main.js"></script>
   </head>
   <body>
@@ -24,9 +25,9 @@
         <ul id="nav-links" class="">
           <li class="list-link"><a href="#top" class="link">About Me</a></li>
           <li class="list-link">
-            <a href="#projects" class="link">Projects</a>
+            <a href="#projects" class="link" onclick="projects(document.querySelector('#projects'))">Projects</a>
           </li>
-          <li class="list-link"><a href="#skills" class="link">Skills</a></li>
+          <li class="list-link"><a href="#skills" class="link" onclick="skills(document.querySelector('#skills'))">Skills</a></li>
           <li class="list-link"><a href="contact.html" class="link">Contact</a></li>
         </ul>
         <div id="container" onclick="menuNav(this); toggleList()">
@@ -73,7 +74,7 @@
         </p>
       </section>
       <section id="middle" class="">
-        <section id="projects" class="" onclick="projects(this)">
+        <section id="projects" class="open-projects" onclick="projects(this)">
           <h2>Projects</h2>
           <img id="rightArrowIMG" class="" src="arrow.svg" alt="arrow">
           <ul id="projectList" class="">
@@ -108,7 +109,7 @@
             </li>
           </ul>
         </section>
-        <section id="skills" class="" onclick="skills(this)">
+        <section id="skills" class="close-skills" onclick="skills(this)">
           <h2>
             Skills
           </h2>
@@ -135,8 +136,8 @@
         </section>        
       </section>
     </main>
+    <footer>
+      <h3>Made in Bristol, 2024.</h3>
+    </footer>
   </body>
-  <footer>
-    <h3>Made in Bristol, 2024.</h3>
-  </footer>
 </html>

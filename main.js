@@ -32,9 +32,9 @@ function closeProject() {
   let proj = document.querySelector("#projects");
   let projectList = document.querySelector("#projectList");
   let rightArrowImg = document.querySelector("#rightArrowIMG");
-  if (proj.classList[0] === "open-project") {
+  if (proj.classList[0] === "open-projects") {
     rightArrowImg.classList.add("show");
-    proj.classList.remove("open-project");
+    proj.classList.remove("open-projects");
     proj.classList.add("close-project");
     projectList.classList.add("hide");
   } else {
@@ -85,7 +85,7 @@ function openProject(x) {
   if (x.classList[0] === "close-project") {
     x.classList.remove("close-project"); // Removing animation for closing project
     projectList.classList.remove("hide");
-    x.classList.add("open-project");
+    x.classList.add("open-projects");
     leftArrowImg.classList.remove("hide");
     rightArrowImg.classList.remove("show");
   }

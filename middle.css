@@ -199,54 +199,7 @@ td {
 
 h3 {
   margin-top: 60px;
-  color: rgb(255, 204, 112);
+  color: rgba(255, 204, 112, 0.6);
   font-weight: bold;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .caption:hover {
-    font-size: 1.3em;
-    font-weight: bold;
-    cursor: pointer;
-  }
-}
-
-@media screen and (min-width: 446px) {
-  #skillsTable {
-    width: 500px;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 710px) {
-  .link {
-    font-size: 1rem;
-  }
-  #IMG1.show,
-  #IMG2.show {
-    max-width: 700px;
-    width: 90%;
-  }
-  #skillsTable {
-    width: 90%;
-    height: 100px;
-  }
-}
-
-@media screen and(max-width:600px) {
-  #skillsTable {
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 445px) {
-  #skillsTable {
-    width: 90%;
-    max-height: 100px;
-    height: 50px;
-  }
-  #tableIMG {
-    margin: 0;
-  }
 }

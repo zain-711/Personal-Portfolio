@@ -1,0 +1,145 @@
+@media screen and (max-width: 1005px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .list-link {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .link {
+    color: rgb(169, 226, 248);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  a:hover {
+    color: rgba(56, 54, 192, 0.863);
+    font-weight: bold;
+    text-decoration: solid;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #name {
+    margin-left: 0px;
+  }
+
+  #menu {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-links.show {
+    margin-right: 0;
+    margin-bottom: 3px;
+    align-content: space-between;
+  }
+
+  .list-link {
+    margin: 4px;
+  }
+  .link {
+    margin: 4px;
+    font-size: 1.2rem;
+  }
+  #container {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  #nav-links.show {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .caption:hover {
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 446px) {
+  #skillsTable {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .link {
+    font-size: 1rem;
+  }
+  #IMG1.show,
+  #IMG2.show {
+    max-width: 700px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 710px) and (min-width: 446px) {
+  #skillsTable {
+    width: 90%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #skillsTable.show {
+    width: 90%;
+    height: 170px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  tbody {
+    max-height: 100%;
+  }
+  #tableIMG {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 935px) and (orientation: landscape) {
+  .contactHTML {
+    margin: 0px;
+    height: 700px;
+    width: 100%;
+  }
+
+  .contactBody {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+  }
+}
