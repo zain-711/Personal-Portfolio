@@ -95,3 +95,19 @@ function projects(x) {
   closeSkills();
   openProject(x);
 }
+
+let count = 0
+
+function onScroll(){
+  let nav = document.querySelector("#nav");
+  nav.classList.toggle("sticky")
+  count++ 
+  return count
+}
+
+addEventListener("scroll", onScroll);
+
+if (count > 0){
+  removeEventListener("scroll", onScroll)
+}
+

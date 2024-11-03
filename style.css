@@ -41,6 +41,12 @@ nav {
   padding-left: 8px;
   padding-right: 8px;
   position: sticky;
+
+}
+
+#nav.sticky{
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.7);
 }
 
 #name {

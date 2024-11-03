@@ -92,12 +92,14 @@
 }
 
 #IMG1,
-#IMG2 {
+#IMG2,
+#IMG3 {
   display: none;
 }
 
 #IMG1.show,
-#IMG2.show {
+#IMG2.show,
+#IMG3.show {
   display: block;
   max-width: 700px;
   width: 500px;
